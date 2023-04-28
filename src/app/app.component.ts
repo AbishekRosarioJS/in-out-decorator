@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Customer } from './models/customer';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'inandout_decorator';
+  customers:Customer[]=[];
+  getCustomers(customers:Customer[]){
+    this.customers = customers;
+
+  }
 }
